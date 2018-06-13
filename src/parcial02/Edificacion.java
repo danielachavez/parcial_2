@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package parcial02;
 
 /**
@@ -245,9 +241,9 @@ public class Edificacion {
         
         System.out.println("***************************************************");
         System.out.println("El centro de mando ha sido mejorado. (Nivel " + this.nivel + ")");
-        System.out.println("Almacenamiento tipo 1: " + this.recurso1);
-        System.out.println("Almacenamiento tipo 2: " + this.recurso2);
-        System.out.println("Almacenamiento tipo 3: " + this.recurso3);
+        System.out.println("Almacenamiento 1: " + this.recurso1);
+        System.out.println("Almacenamiento 2: " + this.recurso2);
+        System.out.println("Almacenamiento 3: " + this.recurso3);
         System.out.println("Recursos disponibles: ");
         System.out.println("Recurso 1: " + this.recursotipo1);
         System.out.println("Recurso 2: " + this.recursotipo2);
