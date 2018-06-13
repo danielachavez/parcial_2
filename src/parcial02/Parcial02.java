@@ -29,19 +29,19 @@ public class Parcial02 {
        jugadores = new Jugador[2];
        
        edificaciones = new Edificacion[3];
-       edificaciones[0] = new Edificacion("Dakar Kindom", 10000, false, 1, 5000, 2500, 1500);
-       edificaciones[1] = new Edificacion("Imperio Cobalt", 10000, false, 2, 5000, 2500, 1500);
-       edificaciones[2] = new Edificacion("La taberna de bob", 10000, false, 3, 5000, 2500, 1500);
+       edificaciones[0] = new Edificacion("Alcatara", 10000, false, 1, 5000, 2500, 1500);
+       edificaciones[1] = new Edificacion("Kalifa", 10000, false, 2, 5000, 2500, 1500);
+       edificaciones[2] = new Edificacion("State", 10000, false, 3, 5000, 2500, 1500);
        
        razas = new Raza[3];
-       razas[0] = new Raza("Elfos", 0, 0);
-       razas[1] = new Raza("Orcos", 4, 1);
-       razas[2] = new Raza("Duendes", 5, 2);
+       razas[0] = new Raza("Gigantes", 0, 0);
+       razas[1] = new Raza("Arqueras", 4, 1);
+       razas[2] = new Raza("Moqueteras", 5, 2);
        
        vehiculos = new Vehiculos[3];
-       vehiculos[0] = new Vehiculos("Catapulta", 5000, 5000, 2500, 1500, 1500, edificaciones[1]);
-       vehiculos[1] = new Vehiculos("Tanque", 5000, 5000, 2500, 1500, 2500, edificaciones[1]);
-       vehiculos[2] = new Vehiculos("Vendetta", 5000, 5000, 2500, 1500, 1500, edificaciones[1]);
+       vehiculos[0] = new Vehiculos("Armata", 5000, 5000, 2500, 1500, 1500, edificaciones[1]);
+       vehiculos[1] = new Vehiculos("Catapulta", 5000, 5000, 2500, 1500, 2500, edificaciones[1]);
+       vehiculos[2] = new Vehiculos("Merkava", 5000, 5000, 2500, 1500, 1500, edificaciones[1]);
        
        for (int i = 0; i < jugadores.length; i++) {
            jugadores[i] = new Jugador();
@@ -96,9 +96,9 @@ public class Parcial02 {
     
     private static void edificar (int jugador) {
         System.out.println("Escoge una opción: ");
-        System.out.println("1) Construir Dakar Kindom.");
-        System.out.println("2) Construir Imperio Cobalt");
-        System.out.println("3) Construir taberna de bob");
+        System.out.println("1) Construir Alcatara.");
+        System.out.println("2) Construir Kalifa");
+        System.out.println("3) Construir State");
         System.out.println("4) Terminar.");
 
         Scanner scanner = new Scanner(System.in);
@@ -131,9 +131,9 @@ public class Parcial02 {
     
     private static void setRaza (int jugador) {
         System.out.println("Escoge una raza: ");
-        System.out.println("1) Entrenar Elfos.");
-        System.out.println("2) Entrenar Orcos.");
-        System.out.println("3) Entrenar Duendes.");
+        System.out.println("1) Entrenar Gigantes.");
+        System.out.println("2) Entrenar Arqueras.");
+        System.out.println("3) Entrenar Mosqueteras.");
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Seleccione una opcion:");
@@ -163,9 +163,9 @@ public class Parcial02 {
     
     private static void crearVihuculo (int jugador) {
         System.out.println("Escoge una opción: ");
-        System.out.println("1) Construir Catapulta.");
-        System.out.println("2) Construir Tanque.");
-        System.out.println("3) Construir Vendetta.");
+        System.out.println("1) Construir Armata.");
+        System.out.println("2) Construir Catapulta.");
+        System.out.println("3) Construir Merkava.");
         System.out.println("4) Terminar.");
 
         Scanner scanner = new Scanner(System.in);
@@ -201,8 +201,8 @@ public class Parcial02 {
        System.out.println("Seleccione una opción:");
        System.out.println("1) Crear una edificación.");
        System.out.println("2) Crear un vehiculo.");
-       System.out.println("3) Mejorar nivel de centro de mando.");
-       System.out.println("4) Generar recursos.");
+       System.out.println("3) Generar recursos.");
+       System.out.println("4) Mejorar nivel de centro de mando.");
        System.out.println("5) Salir.");
         
        Scanner scanner = new Scanner(System.in);

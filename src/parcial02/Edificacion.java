@@ -202,7 +202,7 @@ public class Edificacion {
                     this.recursotipo2 = this.recursotipo2 - costoMejora;
                     this.recursotipo3 = this.recursotipo3 - costoMejora;
                 } else {
-                    System.out.println("No posees suficientes recusos.");
+                    System.out.println("Ya no posees suficientes recusos.");
                 }
                 
                 this.nivel ++;
@@ -220,7 +220,7 @@ public class Edificacion {
                     this.recursotipo2 = this.recursotipo2 - costoMejora;
                     this.recursotipo3 = this.recursotipo3 - costoMejora;
                 } else {
-                    System.out.println("No posees suficientes recusos.");
+                    System.out.println("Ya no posees suficientes recusos.");
                 }
                 
                 this.nivel ++;
@@ -238,7 +238,7 @@ public class Edificacion {
                     this.recursotipo2 = this.recursotipo2 - costoMejora;
                     this.recursotipo3 = this.recursotipo3 - costoMejora;
                 } else {
-                    System.out.println("No posees suficientes recusos.");
+                    System.out.println("Ya no posees suficientes recusos.");
                 }
                 break;
         }
