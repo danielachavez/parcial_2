@@ -39,22 +39,22 @@ public class Jugador {
         this.centroDeMando = jugador.getCentroDeMando();
         Vehiculos asociado = (Vehiculos) data[1]; 
         
-        int costo_1 = asociado.getCosto1();
-        int costo_2 = asociado.getCosto2();
-        int costo_3 = asociado.getCosto3();
+        int costo_1 = asociado.getCosto_1();
+        int costo_2 = asociado.getCosto_2();
+        int costo_3 = asociado.getCosto_3();
         
         if ((this.centroDeMando.getRecursotipo1() - costo_1) >= 0 && (this.centroDeMando.getRecursotipo1() - costo_2) >= 0 && (this.centroDeMando.getRecursotipo3()- costo_3) >= 0) {
             boolean bandera = false;
             
             while (iterador.hasNext()) {
                 key = (String) iterador.next();
-                if (ClaveActual.getNombre().equals(key)) {
+                if (asociado.getNombre().equals(key)) {
                     bandera = true;
                     break;
                 }
             }
 
-            String clave = ClaveActual.getNombre();
+            String clave = asociado.getNombre();
 
             if (!bandera) {
                 this.vehiculos.put(clave, data);
