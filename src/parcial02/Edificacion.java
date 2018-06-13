@@ -8,7 +8,7 @@ package parcial02;
 public class Edificacion {
 
     private int vida;
-    private int tipo;
+    private int traslado;
 
     /*
         * 0 --> (Todos los recursos) ---> Sólo centro de mando, cuya principal función es alvergar  recursos (Valores iniciales: 10000, 5000, 3000)
@@ -78,12 +78,12 @@ public class Edificacion {
         this.vida = vida;
     }
 
-    public int getTipo() {
-        return tipo;
+    public int getTraslado() {
+        return traslado;
     }
 
-    public void setTipo(int tipo) {
-        this.tipo = tipo;
+    public void setTraslado(int traslado) {
+        this.traslado = traslado;
     }
 
     public void setEdificacion(String edificacion) {
@@ -151,7 +151,7 @@ public class Edificacion {
     }
 
     public void generarRecursos() {
-        switch (tipo) {
+        switch (traslado) {
             case 0:
                 this.recursotipo1 = 10000;
                 this.recursotipo2 = 5000;
