@@ -24,12 +24,12 @@ public class Raza {
         * 1 --> Entrenar milicia
         * 2 --> Creacion de vehiculos
     */
-    private int tipo;
+    private int traslado;
    
   
-    public Raza (String nombre, int tipo, int fortaleza) {
+    public Raza (String nombre, int traslado, int fortaleza) {
       this.nombre = nombre;
-      this.tipo = tipo;
+      this.traslado = traslado;
     }
 
     public String getNombre() {
@@ -48,11 +48,11 @@ public class Raza {
         this.nombre = nombre;
     }
 
-    public int getTipo() {
-        return tipo;
+    public int getTraslado() {
+        return traslado;
     }
 
-    public void setTipo(int tipo) {
-        this.tipo = tipo;
+    public void setTraslado(int traslado) {
+        this.traslado = traslado;
     }
 }
